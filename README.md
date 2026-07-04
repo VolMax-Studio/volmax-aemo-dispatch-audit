@@ -1,5 +1,7 @@
 # AEMO BESS Fleet Dispatch Audit
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21190094.svg)](https://doi.org/10.5281/zenodo.21190094)
+
 Independent fleet-wide audit of grid-scale battery energy storage systems (BESS) operating in the Australian National Electricity Market (NEM) from **June 1, 2025 to May 31, 2026**.
 
 ---

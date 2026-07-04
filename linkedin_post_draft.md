@@ -29,5 +29,5 @@ Full audit, code, and pinned data hashes — links in the first comment.
 ---
 
 ### [First Comment Links]
-* **Zenodo Dataset & Reports (DOI)**: [Insert Zenodo DOI Link here]
+* **Zenodo Dataset & Reports (DOI)**: https://doi.org/10.5281/zenodo.21190094
 * **GitHub Repository**: https://github.com/VolMax-Studio/volmax-aemo-dispatch-audit
