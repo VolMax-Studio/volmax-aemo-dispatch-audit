@@ -285,7 +285,7 @@ def compile_report():
         md_content.append(f"- `https://nemweb.com.au/Reports/ARCHIVE/Causer_Pays_Scada/{f}`")
 
     # Write file
-    out_md = './l1_integrity_report.md'
+    out_md = './reports/l1_integrity_report.md'
     with open(out_md, 'w') as f:
         f.write("\n".join(md_content))
     print(f"Saved Markdown report to {out_md}")

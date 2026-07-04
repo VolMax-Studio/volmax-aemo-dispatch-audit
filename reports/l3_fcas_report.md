@@ -4,7 +4,7 @@
 **Version:** v1.0 (Final)  
 **Verification Protocol:** VolMax P10 Standard (Level 3)  
 **Audit Window:** 1 June 2025 – 31 May 2026  
-**Audit Data Snapshot Hash (SHA-256):** `3c635272311468b0a2098efd3a8c678e1dbed4690ffd5b66d16aac208f42b9ba`  
+**Audit Data Snapshot Hash (SHA-256):** `6695b5fd3087dd54e374b130480521861908470d906b25a072a0aa247f77ae6d`  
 **Document Integrity Check:** Verified via detached checksum in `l3_fcas_report.sha256`  
 
 ---

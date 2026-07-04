@@ -309,15 +309,15 @@ def main():
     generate_markdown_report(results, json_hash, accepted_duids, hpr1_5m_standby, hpr1_15m_standby, hpr1_diff)
 
     # 7. Generate Detached Document Checksum
-    report_path = './l2_conformance_report.md'
+    report_path = './reports/l2_conformance_report.md'
     md_hash = calculate_sha256(report_path)
-    sha_path = './l2_conformance_report.sha256'
+    sha_path = './reports/l2_conformance_report.sha256'
     with open(sha_path, 'w') as f_sha:
         f_sha.write(f"{md_hash}  l2_conformance_report.md\n")
     print(f"Saved detached document checksum to {sha_path} ({md_hash})")
 
 def generate_markdown_report(results, json_hash, accepted_duids, hpr1_5m_standby, hpr1_15m_standby, hpr1_diff):
-    report_path = './l2_conformance_report.md'
+    report_path = './reports/l2_conformance_report.md'
     md_content = []
     
     md_content.append("# Level 2 Dispatch Conformance & Generalization Audit")

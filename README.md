@@ -94,9 +94,9 @@ python reproduce.py
 ```
 
 ### Generated Artifacts
-- **L1 Report**: [l1_integrity_report.md](l1_integrity_report.md)
-- **L2 Report**: [l2_conformance_report.md](l2_conformance_report.md)
-- **L3 Report**: [l3_fcas_report.md](l3_fcas_report.md)
+- **L1 Report**: [l1_integrity_report.md](reports/l1_integrity_report.md)
+- **L2 Report**: [l2_conformance_report.md](reports/l2_conformance_report.md)
+- **L3 Report**: [l3_fcas_report.md](reports/l3_fcas_report.md)
 - **Plots**:
   - Conformance Exceedance Rates: `./results/plot1_conformance_exceedance.png`
   - EFC vs Standby Scatter: `./results/plot2_efc_vs_standby.png`

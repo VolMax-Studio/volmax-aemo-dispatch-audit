@@ -203,7 +203,7 @@ def generate_l3_visualizations(df_freq, df_bess):
 def generate_fcas_report(df_freq, df_bess, json_hash):
     """Compile the Level 3 FCAS Performance Report."""
     print("Compiling Level 3 Markdown report...")
-    report_path = './l3_fcas_report.md'
+    report_path = './reports/l3_fcas_report.md'
     
     min_freq = df_freq['frequency_hz'].min()
     max_freq = df_freq['frequency_hz'].max()
@@ -486,9 +486,9 @@ def main():
     
     generate_fcas_report(df_freq, df_bess, json_hash)
     
-    report_path = './l3_fcas_report.md'
+    report_path = './reports/l3_fcas_report.md'
     md_hash = calculate_sha256(report_path)
-    sha_path = './l3_fcas_report.sha256'
+    sha_path = './reports/l3_fcas_report.sha256'
     with open(sha_path, 'w') as f_sha:
         f_sha.write(f"{md_hash}  l3_fcas_report.md\n")
     print(f"Saved detached document checksum to {sha_path} ({md_hash})")
