@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this audit codebase or reports, please cite it as below."
+authors:
+  - name: "VolMax Studio"
+title: "AEMO BESS Fleet Dispatch Conformance and FCAS Performance Audit"
+version: "1.0.0"
+date-released: "2026-07-04"
+license: "MIT"
+repository-code: "https://github.com/VolMax-Studio/volmax-aemo-dispatch-audit"

@@ -1,0 +1,23 @@
+{
+    "title": "AEMO BESS Fleet Dispatch Conformance and FCAS Performance Audit",
+    "description": "Level 1 data integrity, Level 2 dispatch conformance verification, and Level 3 contingency FCAS performance audit for the Australian BESS fleet (>=50 MW) under the VolMax P10 Verification Protocol. The audit uses 5-minute SCADA, dispatch load targets, and high-resolution grid frequency telemetry to evaluate conformance targets, cross-jurisdictional generalization, and FCAS response.",
+    "creators": [
+        {
+            "name": "VolMax Studio",
+            "affiliation": "VolMax Institute"
+        }
+    ],
+    "access_right": "open",
+    "license": "mit",
+    "keywords": [
+        "AEMO",
+        "NEM",
+        "BESS",
+        "Battery Energy Storage Systems",
+        "Dispatch Conformance",
+        "FCAS",
+        "Grid Frequency Telemetry",
+        "VolMax P10 Protocol"
+    ],
+    "notes": "Final verdicts: ES-AU-01: Verified (with Descriptive Band), ES-AU-02: Not Verified (Hypothesis Rejected), ES-AU-03: Unfalsifiable / Not Publicly Auditable."
+}

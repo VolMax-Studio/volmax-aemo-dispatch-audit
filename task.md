@@ -1,0 +1,32 @@
+- [x] Initialize AEMO BESS project directory
+- [x] Pin AEMO copyright terms & DUID selection rules in README.md
+- [x] L0 research on 4-second FCAS data (verified FPP transition on 8 June 2025 and participant-private restriction on 4-second unit SCADA)
+- [x] Run one-day test download (e.g. 2025-06-01) to verify SCADA & target schemas and dump their columns
+- [x] Verify identity of SCADAVALUE(t) ≡ INITIALMW(t) over June 2025 (100.00% match rate across 3.75M rows)
+- [x] Verify public availability of legacy 4-second SCADA archives (available up to 8 September 2025, last file: `PUBLIC_CAUSER_PAYS_SCADA_20250908.zip`)
+- [x] Implement `download_aemo_data.py` (chunked month-by-month download, hash raw files in manifest, filter candidates immediately, delete raw cache)
+- [x] Implement `verify_aemo_claims.py` (Level 2 audit calculations for ES-AU-01, ES-AU-02)
+  - [x] Stitch monthly SCADA & dispatch feather files
+  - [x] Implement shift logic: align TOTALCLEARED(t) with SCADAVALUE(t+5)
+  - [x] Calculate MAE, RMSE, and exceedance rates under VolMax band
+  - [x] Compute EFC, standby ratios, and power noise metrics
+  - [x] Generate JSON metrics and Markdown report
+  - [x] Create rich visualization plots
+- [x] Implement entry-point `reproduce.py`
+- [x] Execute L1 audit over the full fleet and log accepted/rejected DUID reasons
+- [x] User review of L1 results completed (Green light for Level 2)
+- [x] Level 3 FCAS Performance Audit (ES-AU-03)
+  - [x] Implement `verify_aemo_fcas.py` to download and parse 4s network frequency data for August 19, 2025 event
+  - [x] Align 5-minute SCADA data for SA BESS units (HPR1, TEMPB1, BLYTHB1) during the event
+  - [x] Generate dual-axis plot (`results/plot3_fcas_event_august19.png`)
+  - [x] Compile `./l3_fcas_report.md` with P10-L5 dual hashes and limitations
+  - [x] Modify `reproduce.py` to run Level 3 script
+  - [x] Run end-to-end reproduction check
+  - [x] Update `walkthrough.md` with L3 achievements
+- [x] Address feedback points from Lead (Restart Session):
+  - [x] Point 1: DUID candidate pool selection & cross-check with April 2026 Generation Info (LDLL1 added, rejections updated with specific reasons)
+  - [x] Point 2: Commercial Operation Dates (COD) verification & post-COD active windows (KESSB1 post-COD active window applied; other mid-window CODs moved to L1 rejections)
+  - [x] Point 3: FCAS cycling exceedance hypothesis (downloaded, processed 13 weeks of 4s frequency telemetry; stitched and calculated correlation table in L3 report)
+  - [x] Point 4: CDX query verification for purged archives (confirmed 3 missing archives returned empty on Wayback Machine CDX API; documented in README and reports)
+  - [x] Point 5: Standby resolution confound (added conditional caveat for European Bollingstedt baseline comparison)
+- [x] Run full reproduction pipeline end-to-end and update walkthrough.md
