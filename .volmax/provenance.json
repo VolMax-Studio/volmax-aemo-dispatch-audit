@@ -1,0 +1,27 @@
+{
+  "baseline_commit": "3845ccb986b0dbdf40555dbf004e48b6563251fe",
+  "baseline_tree": "1164172dc76c7b86e7c339ee087fbfa36a814151",
+  "behavior": {
+    "callbacks": false,
+    "executable": false,
+    "network_calls": false,
+    "telemetry": false
+  },
+  "canonical_url": "https://github.com/VolMax-Studio/volmax-aemo-dispatch-audit",
+  "default_branch_at_recording": "main",
+  "license": {
+    "detected_spdx": "MIT",
+    "files": [
+      "LICENSE"
+    ],
+    "note": "This provenance record does not grant or alter license rights."
+  },
+  "owner": "VolMax-Studio",
+  "record_id": "urn:volmax:github:VolMax-Studio/volmax-aemo-dispatch-audit:3845ccb986b0dbdf40555dbf004e48b6563251fe",
+  "record_type": "volmax.repository-provenance",
+  "record_version": 1,
+  "recorded_at": "2026-10-08T19:41:54+00:00",
+  "repository": "VolMax-Studio/volmax-aemo-dispatch-audit",
+  "schema": "urn:volmax:provenance:v1",
+  "scope": "Repository identity and baseline commit only; historical tags, releases, evidence, authorship, and existing file bytes are unchanged."
+}
